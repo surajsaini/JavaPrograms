@@ -2,7 +2,7 @@ package JavaProgramListPackage;
 
 import java.util.*;
 
-public class UniqueLongestSubString {
+public class String_UniqueLongestSubString {
 
 	public static void main(String[] args) {
 		ULSS();
@@ -13,7 +13,6 @@ public class UniqueLongestSubString {
 		String input = "pwwkew";
 
 		Set<Character> set = new HashSet<>();
-		
 
 		int start = 0;
 		int length = 0;
@@ -30,7 +29,8 @@ public class UniqueLongestSubString {
 			length = Math.max(length, end - start + 1);
 
 		}
-		
-		System.out.println(length + " --"  );
+
+		System.out.println(length + " --");
+		System.out.println(set);
 	}
 }
