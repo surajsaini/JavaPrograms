@@ -1,18 +1,20 @@
-
 package JavaProgramListPackage;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Random;
 
-public class practice {
+public class List_RandomNumber {
+
 	public static void main(String[] args) {
 		abc();
+
 	}
 
 	public static void abc() {
 
-		
 		List<List<Integer>> lottoList = new ArrayList<>();
-		
+
 		Random random = new Random();
 
 		for (int j = 0; j < 2; j++) {
