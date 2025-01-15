@@ -17,12 +17,16 @@ public class List_RandomNumber {
 
 		Random random = new Random();
 
-		for (int j = 0; j < 2; j++) {
+		for (int j = 0; j < 12; j++) {
 			List<Integer> lotto = new ArrayList<>();
-			for (int i = 0; i < 7; i++) {
+			int n = 7;
+			for (int i = 0; i < n; i++) {
 				int num = random.nextInt(50) + 1;
-				lotto.add(num);
-
+				if (!lotto.contains(num)) {
+					lotto.add(num);
+				} else {
+					n++;
+				}
 			}
 			lottoList.add(lotto);
 		}
